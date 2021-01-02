@@ -1,0 +1,35 @@
+Personal notes while i'm working on this thesis.
+This will kinda contain some on the fly notes to get me started quickly.
+
+I will be doing a research to see how facial recognition can be applied on manga, for future deepfake/manga generation. 
+
+
+- Can one facial recognition model work on all manga?
+    - I would like to test on a couple of different manga 
+        - One piece 
+            - Heavy fantasy, very unique and 'quirky' drawing style
+            - Has sharks etc... with faces.
+        - Shigatsu Wa Kimi No Uso 
+            - More realistic looking drawing style. 
+        - Horimiya
+            - Hyper realistic. Practically real.
+
+- What are the different possibilities for facial detection on manga?
+    - The AnimeFaceXML
+    - CNN
+    - Some pre trained networks (Resnet/VGG etc...)
+    - Deformable Parts model.
+    - ACFD: Asymmetric Cartoon Face Detector
+
+
+- How do the different ways of detecting faces compare?
+    - Make a visual way, like a graph to represent this.
+
+
+
+- Is there a difference between detecting a realistic- or a fantasy oriented face?
+
+
+
+
+- Is there a difference in model performance between the different manga genres or authors.
