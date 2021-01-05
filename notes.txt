@@ -16,20 +16,32 @@ I will be doing a research to see how facial recognition can be applied on manga
 
 - What are the different possibilities for facial detection on manga?
     - The AnimeFaceXML
+        - Works okay on Horimiya, but less so on Shigatsu Wa Kimi and One Piece...
+            - In One Piece it only detects the face of Nami, a female character.
+            - Usually only detects frontal faces.
     - CNN
-    - Some pre trained networks (Resnet/VGG etc...)
+        - First day, pretty terrible results.
+        - For the future    
+            - ✓ Have dataset include captions, like english text
+                - ✓ A lot of text gets mistaken for being a face.
+                - ✓ Maybe create a second class for only text.
+                    - ✓ Have to use a softmax layer then.
+                        - Big improvement on accuracy. (20-30% gained.)
+                        - Test this on same dataset that i used for AnimeFaceXML
+
+                - ✓ Try Region of interest instead of sliding window.
+                    - Much better results than Sliding window. Though can still be improved!
+            - ✓ Have dataset include everything BUT faces. 
+            - ✓ Make dataset images bigger. 
+                - ✓ Try this with random.
+    - Some pre trained networks (Resnet/VGG/Yolo etc...)
+        - Using transfer learning.
+    - HOG
     - Deformable Parts model.
     - ACFD: Asymmetric Cartoon Face Detector
 
 
 - How do the different ways of detecting faces compare?
     - Make a visual way, like a graph to represent this.
-
-
-
 - Is there a difference between detecting a realistic- or a fantasy oriented face?
-
-
-
-
 - Is there a difference in model performance between the different manga genres or authors.
