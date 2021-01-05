@@ -34,7 +34,11 @@ I will be doing a research to see how facial recognition can be applied on manga
             - ✓ Have dataset include everything BUT faces. 
             - ✓ Make dataset images bigger. 
                 - ✓ Try this with random.
+    - Faster R-CNN
+        - Overlap.
     - Some pre trained networks (Resnet/VGG/Yolo etc...)
+        - Notatie data: <class> <x> <y> <w> <h>
+        - Filters: (5 + <class count>) * 3
         - Using transfer learning.
     - HOG
     - Deformable Parts model.
