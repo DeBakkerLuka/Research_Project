@@ -28,21 +28,37 @@ I will be doing a research to see how facial recognition can be applied on manga
                     - ✓ Have to use a softmax layer then.
                         - Big improvement on accuracy. (20-30% gained.)
                         - Test this on same dataset that i used for AnimeFaceXML
+                            - Not the best results but it does detect some faces.
 
                 - ✓ Try Region of interest instead of sliding window.
                     - Much better results than Sliding window. Though can still be improved!
+                    - ROI can also be improved, maybe Sliding window is better when using a deeper model.
             - ✓ Have dataset include everything BUT faces. 
             - ✓ Make dataset images bigger. 
                 - ✓ Try this with random.
-    - Faster R-CNN
-        - Overlap.
+        
+    - Faster R-CNN / YOLO 
+        - Overlap. When two frames cover eachother for a certain percentage, throw one away.
+        - Took about 8 hours to train.
     - Some pre trained networks (Resnet/VGG/Yolo etc...)
         - Notatie data: <class> <x> <y> <w> <h>
         - Filters: (5 + <class count>) * 3
-        - Using transfer learning.
     - HOG
     - Deformable Parts model.
     - ACFD: Asymmetric Cartoon Face Detector
+
+- What are the different possibilities for facial recognition on manga?
+    - Xception
+    - VGG16
+    - VGG19
+    - ResNet50
+    - InceptionV3
+    - InceptionResnet
+    - MobileNet
+    - DenseNet
+    - NASNet
+    - MobileNetV2
+
 
 
 - How do the different ways of detecting faces compare?
