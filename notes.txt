@@ -38,8 +38,11 @@ I will be doing a research to see how facial recognition can be applied on manga
                 - ✓ Try this with random.
         
     - Faster R-CNN / YOLO 
+        - CHANGE CHANNEL COUNT FROM 3 TO 2 IN NEXT NETWORK
         - Overlap. When two frames cover eachother for a certain percentage, throw one away.
         - Took about 8 hours to train.
+            - First YOLO model results are amazing on realistic manga, mediocre on fantasy-heavy manga! 
+            - Will improve the model, try a heavier model as well with more data.
     - Some pre trained networks (Resnet/VGG/Yolo etc...)
         - Notatie data: <class> <x> <y> <w> <h>
         - Filters: (5 + <class count>) * 3
@@ -48,20 +51,28 @@ I will be doing a research to see how facial recognition can be applied on manga
     - ACFD: Asymmetric Cartoon Face Detector
 
 - What are the different possibilities for facial recognition on manga?
-    - Xception
-    - VGG16
-    - VGG19
-    - ResNet50
-    - InceptionV3
-    - InceptionResnet
-    - MobileNet
-    - DenseNet
-    - NASNet
-    - MobileNetV2
-
-
+    - VGG16 
+    - VGGFace
+    - Resnet50 
+    - Senet50
+    - Facenet
+    - DeepFace ? 
+    - OpenFace
+    
 
 - How do the different ways of detecting faces compare?
     - Make a visual way, like a graph to represent this.
+        - Compare the results as well   
+            - So far i've done: 
+                - AnimeFaceXML 
+                - CNN 
+                - YOLO 
+
 - Is there a difference between detecting a realistic- or a fantasy oriented face?
+    - So far it definitely looks like it. A fantasy oriented face can have much more variation than a realistic looking one, so it's definitely much tougher to predict or even see. Next to that, an already fantasy-heavy looking face can have a quirky impression, making it near impossible to see for smaller models.
+    - Realistic looking faces are definitely easier to detect! 
+        - Tho this doesn't mean that fantasy looking faces are thrown out of the window, sometimes even Legoshi from popular manga "Beastars" (A live wolf) gets recognised as character. The model probably needs more data or a deeper structure to recognise this more easily though.
+
 - Is there a difference in model performance between the different manga genres or authors.
+    - Authors not so much, the key features of a face stay the same (especially eyes, hair, nose, shape), but fantasy-heavy authors will be more difficult to predict, definitely.
+    - I wouldn't say genres matter as much, though there's no doubt that realistic genres such as Slice of life or drama will be easier to detect over fantasy (especially since fantasy pages can be a lot busier or obstructive of the faces.)
