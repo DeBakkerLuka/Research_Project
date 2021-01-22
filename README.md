@@ -12,3 +12,4 @@ My inspiration for this research project was a small news article on the Nvidia 
 # The solution
 
 # Train it yourself!
+At the end of this project I wrote some code so you could train your own Recognition model. Please check out my guide [here](https://github.com/DeBakkerLuka/Facial_Recognition_And_Detection_Manga)
